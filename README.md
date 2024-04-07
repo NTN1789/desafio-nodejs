@@ -1,5 +1,8 @@
 # Desafio de Desenvolvimento de API de Agendamento
 
+# Natan almeida da silva 
+
+
 ## Descrição do Projeto
 
 O objetivo deste desafio é desenvolver uma API RESTful em Node.js utilizando TypeScript para um sistema de agendamento de salões de beleza. A API permitirá que os clientes do salão agendem serviços de beleza fornecendo apenas um e-mail de contato.
@@ -21,42 +24,66 @@ O objetivo deste desafio é desenvolver uma API RESTful em Node.js utilizando Ty
 - Express.js
 - Banco de Dados Relacional (MySQL, PostgreSQL, SQLite, etc.)
 
-## Estrutura do Projeto
 
-A estrutura do projeto deve seguir uma organização básica, como a seguinte:
 
-    projeto-agendamento-salao/
-    │
-    ├── src/
-    │   ├── controllers/
-    │   │   └── [controller.ts]      # Controladores para lidar com as requisições HTTP
-    │   ├── models/
-    │   │   └── [model.ts]           # Modelos para definir a estrutura dos dados no banco
-    │   ├── routes/
-    │   │   └── [routes.ts]          # Definição das rotas da aplicação
-    │   └── index.ts                 # Arquivo principal, inicializa o servidor Express
-    │
-    ├── config/
-    │   └── [database.ts]            # Configuração do banco de dados
-    │
-    └── package.json                 # Arquivo de configuração do Node.js
+## REST API
+
+
+## Install
+
+- Node.js
+- TypeScript
+- Express.js
+- Sequelize
+- Banco de Dados Relacional PostgreSQL  ou Docker 
 
 
 
-## Critérios de Avaliação
+## Start  do projeto 
 
-Seu projeto será avaliado com base nos seguintes critérios:
+- npm  run  start  ou npm run dev 
 
-1. Funcionalidade Completa da API de Agendamento
-2. Organização do Código e Estrutura do Projeto
-3. Boas Práticas de Desenvolvimento (nomenclatura de variáveis, modularização, etc.)
-4. Utilização Efetiva de TypeScript para Tipagem Estática
-5. Tratamento de Erros e Exceções
-6. (Bônus) Documentação Clara e Concisa 
-7. (Bônus) Uso de variaveis de ambiente
 
-## Entrega
+## Get agendamento 
 
-- Faça um fork deste repositório e desenvolva o projeto nele.
-- Ao finalizar, envie um pull request com a sua solução.
+ - http://localhost:8080/api/agendamento
 
+
+ ## Response 
+
+- HTTP/1.1 200 OK
+- Date: Thu, 24 Feb 2011 12:36:30 GMT
+- Status: 200 OK
+- Connection: close
+- []
+
+
+
+
+## Post agendamento 
+
+ - http://localhost:8080/api/agendamento
+
+
+ ## Response 
+
+- HTTP/1.1 200 OK
+- email: "teste@gmail.com",
+- nome: "teste",
+- agendou: "opcional",
+- Status: 200 OK,
+- Connection: close
+- []
+
+## delete agendamento 
+
+ - http://localhost:8080/api/agendamento/2
+
+
+ ## Response 
+
+- HTTP/1.1 200 OK,
+- agendamento deletado ,
+- Status: 200 OK,
+- Connection: close,
+- []
